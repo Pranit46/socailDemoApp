@@ -7,7 +7,7 @@ const Blogs = () => {
 
   const sendRequest = async () => {
     const res = await axios
-      .get("http://localhost:4000/api/blogs")
+      .get("https://socialapp10.herokuapp.com/api/blogs")
       .catch((err) => console.log(err));
     let data = await res.data;
     return data;
