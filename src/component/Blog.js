@@ -24,7 +24,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
 
   const deleteRequest = async () => {
     const res = await axios
-      .delete(`http://localhost:4000/api/blogs/delete/${id}`)
+      .delete(`https://socialapp10.herokuapp.com/blogs/delete/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
