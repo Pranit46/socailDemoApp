@@ -20,7 +20,7 @@ const BlogDetails = () => {
 
   const fetchDetails = async () => {
     const res = await axios
-      .get(`http://localhost:4000/api/blogs/${id}`)
+      .get(`https://socialapp10.herokuapp.com/api/blogs/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     console.log(data);
@@ -40,7 +40,7 @@ const BlogDetails = () => {
 
   const sendRequest = async () => {
     const res = await axios
-      .put(`http://localhost:4000/api/blogs/updateblog/${id}`, {
+      .put(`https://socialapp10.herokuapp.com/api/blogs/updateblog/${id}`, {
         title: inputs.title,
         description: inputs.description,
       })
