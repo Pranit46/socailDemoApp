@@ -25,7 +25,7 @@ const Auth = () => {
 
   const sendRequest = async (type = "login") => {
     const res = await axios
-      .post(`http://localhost:4000/api/users/${type}`, {
+      .post(`https://socialapp10.herokuapp.com/api/users/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,
